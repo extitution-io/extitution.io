@@ -308,9 +308,26 @@
   .readmore:hover{text-decoration:underline}
 
   /* footer */
-  footer{padding:56px 0 72px}
-  footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;flex-wrap:wrap}
-  footer p{color:var(--ink-faint);font-size:14.5px;max-width:44ch}
+  footer{
+    padding:74px 0 84px;position:relative;
+    border-top:1px solid var(--line);
+    background:linear-gradient(180deg,rgba(21,26,14,.55),transparent 60%);
+  }
+  footer::before{
+    content:"";position:absolute;top:-1px;left:0;width:100%;height:1px;
+    background:linear-gradient(90deg,transparent,rgba(184,240,92,.55),transparent);
+  }
+  footer .wrap{display:flex;justify-content:space-between;align-items:flex-start;gap:56px;flex-wrap:wrap}
+  footer .fbrand{display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+  footer .fword{font-size:14px;letter-spacing:.12em;color:var(--ink)}
+  footer .fword b{font-weight:600;color:#d8ff96}
+  footer .fabout{margin-left:auto;max-width:56ch;text-align:right;display:flex;flex-direction:column;gap:18px;align-items:flex-end}
+  footer .fabout p{color:var(--ink-dim);font-size:15px;line-height:1.75}
+  footer .ftag{
+    font-size:11px;letter-spacing:.22em;color:var(--lime);
+    border:1px solid var(--lime-dim);border-radius:999px;padding:8px 18px;
+    box-shadow:0 0 24px rgba(184,240,92,.12);
+  }
   footer .fl{display:flex;gap:20px}
   footer .fl a{font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--ink-dim);text-decoration:none}
   footer .fl a:hover{color:var(--lime)}
@@ -831,7 +848,7 @@
   <section class="block" id="principles">
     <div class="wrap">
       <span class="mono eyebrow">how we operate</span>
-      <h2>structured like the thing we're building.</h2>
+      <h2>structured like an extitution</h2>
       <div class="principles">
         <div class="prin"><span class="mono k">01 · what already works</span><p>we've proven we can coordinate capital extitutionally. $60m+ moved, 5 million donations. the receipts are below.</p></div>
         <div class="prin"><span class="mono k">02 · governed by trustgraph</span><p>no board seats for funders. governed by a sprawling <a href="#/trust">trustgraph</a>: influence follows earned trust, and control stays with the network. no new token launch, no exit. a nonprofit funded by grants, matching pools, and people who want this to exist.</p></div>
@@ -1542,16 +1559,23 @@
 
 <footer>
   <div class="wrap">
-    <p><span class="shroom footmark" data-size="15" aria-hidden="true"></span>ethereum extitutional is an independent nonprofit growing open, networked coordination at ethereum's app layer. grown, not incorporated. 2026.</p>
-    <div class="fl">
-      <a class="fbtn" href="#/">home</a>
-      <a class="fbtn" href="#/fund">fund</a>
-      <a class="fbtn" href="#/trust">trust</a>
-      <a href="#/impact">impact</a>
-      <a href="#/mycofi">mycofi</a>
-      <a href="#/pluralism">pluralism</a>
-      <a href="https://t.me/+YDJcJMtgxjA3ZmQ5" target="_blank" rel="noopener">telegram ↗</a>
-      <a href="https://github.com/extitutional-io/extitutional.io/" target="_blank" rel="noopener">github ↗</a>
+    <div class="fbrand">
+      <span class="shroom" data-size="42" aria-hidden="true"></span>
+      <span class="fword mono">ethereum <b>extitutional</b></span>
+      <div class="fl">
+        <a class="fbtn" href="#/">home</a>
+        <a class="fbtn" href="#/fund">fund</a>
+        <a class="fbtn" href="#/trust">trust</a>
+        <a href="#/impact">impact</a>
+        <a href="#/mycofi">mycofi</a>
+        <a href="#/pluralism">pluralism</a>
+        <a href="https://t.me/+YDJcJMtgxjA3ZmQ5" target="_blank" rel="noopener">telegram ↗</a>
+        <a href="https://github.com/extitutional-io/extitutional.io/" target="_blank" rel="noopener">github ↗</a>
+      </div>
+    </div>
+    <div class="fabout">
+      <p>ethereum extitutional is an independent nonprofit growing open, networked, community-shaped coordination at ethereum's app layer. no new token, no board seats for funders: a trustgraph governs, grants and matching pools fund, and everything ships open source. rooted in gitcoin's social structure, a decade of quadratic funding receipts, and the belief that networks can hold people better than walls ever did.</p>
+      <span class="ftag mono">grown, not incorporated · 2026</span>
     </div>
   </div>
 </footer>
