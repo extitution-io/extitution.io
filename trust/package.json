@@ -1,0 +1,14 @@
+{
+  "name": "extitutional-trust",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "trustgraph — governance by earned trust. app 02 of ethereum extitutional.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "sharp": "^0.34.2"
+  }
+}
