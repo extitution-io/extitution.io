@@ -1,0 +1,16 @@
+{
+  "name": "extitutional-grants",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "quadratic funding grants platform for extitutional.io — express + sqlite + on-chain indexer",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.22.0",
+    "sharp": "^0.34.2"
+  }
+}

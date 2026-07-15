@@ -137,7 +137,7 @@
   .hero .inner{
     position:relative;min-height:calc(100svh - 60px);
     display:flex;flex-direction:column;justify-content:center;
-    padding:90px 0 110px;
+    padding:90px 24px 110px;
   }
   .eyebrow{color:var(--lime);margin-bottom:22px;display:block}
   .hero .eyebrow{display:inline-flex;align-items:center;gap:10px}
@@ -525,6 +525,23 @@
     .bb-caps{flex-direction:column}
     .bcap.inst{text-align:left}
   }
+  @media(max-width:520px){
+    body{overflow-x:hidden}
+    .wrap{padding:0 18px}
+    h1{font-size:clamp(30px,8.6vw,40px)}
+    .hero h1{font-size:clamp(28px,8.2vw,38px);max-width:100%}
+    .hero p.lede{font-size:16.5px;margin-top:20px}
+    h2{font-size:clamp(23px,6.4vw,30px)}
+    .hero .inner{padding:70px 18px 90px}
+    .lineage{margin-bottom:28px}
+    .lin-items{margin-left:26px}
+    .lin-item{font-size:11px;letter-spacing:.1em}
+    .ctas{gap:10px;margin-top:28px}
+    .ctas .btn{padding:11px 15px;font-size:12px}
+    .apphero h1{max-width:100%}
+    .statrow{grid-template-columns:1fr 1fr}
+    .lede{font-size:16.5px}
+  }
 </style>
 </head>
 <body>
@@ -555,7 +572,6 @@
         <div class="lin-items">
           <span class="lin-item l1">ethereum extitutional · a nonprofit</span>
           <span class="lin-item l2">rooted in ethereum</span>
-          <span class="lin-item l3">rooted in gitcoin's social structure</span>
         </div>
       </div>
       <h1>a new <s>institution</s> <b>extitution</b> for ethereum<span class="spore">.</span></h1>
@@ -1019,7 +1035,7 @@
       <h1>fund the extitutions of ethereum.</h1>
       <p class="lede">quadratic funding turns many small donations into a democratic signal, and the matching pool follows it. $1 from a hundred people outweighs $100 from one. the crowd decides what ethereum's open layer needs.</p>
       <div class="ctas">
-        <a class="btn solid" href="#round" onclick="event.preventDefault();document.getElementById('round').scrollIntoView({behavior:'smooth'})">preview round 01</a>
+        <a class="btn solid" href="round01.html">enter round 01 →</a>
         <a class="btn" href="https://t.me/+YDJcJMtgxjA3ZmQ5" target="_blank" rel="noopener">apply as a project</a>
       </div>
     </div>

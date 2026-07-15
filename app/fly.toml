@@ -1,0 +1,15 @@
+# alternative to vercel: fly launch --no-deploy && fly deploy
+# then: fly secrets set DATABASE_URL=<postgres url> ADMIN_KEY=<yours> BASE_URL=https://…
+app = "extitutional-grants"
+primary_region = "den"
+
+[build]
+
+[env]
+  PORT = "4870"
+
+[http_service]
+  internal_port = 4870
+  force_https = true
+  auto_stop_machines = false   # keeps the 45s indexer loop alive
+  min_machines_running = 1
