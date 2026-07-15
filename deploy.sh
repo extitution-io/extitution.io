@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+cp ../mirrormirror/processed/drafts/2026-07-14_ethereum_extitutional_landing.html index.html
+
 # deploy: commit + push to github, then ship to vercel prod
 # usage: ./deploy.sh ["commit message"]
 set -euo pipefail
